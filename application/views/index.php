@@ -6,6 +6,6 @@
 <body>
 
 <p>deving</p>
-
+{%$myarray%}
 </body>
 </html>
