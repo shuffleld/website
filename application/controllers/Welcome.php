@@ -23,6 +23,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 	public function main(){
-		$this->load->view('index');
+		$this->tp->assign("title","恭喜你smarty安装成功！");
+		$this->tp->assign("body","欢迎使用smarty模板引擎");
+		$arr = array(1=>'zhang',2=>'xing',3=>'wang');
+		$this->tp->assign("myarray",$arr);
+		$this->tp->display('main.tpl');
 	}
 }
